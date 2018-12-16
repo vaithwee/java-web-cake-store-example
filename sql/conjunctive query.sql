@@ -1,0 +1,1 @@
+select g.id, g.name, g.cover, g.image1, g.image2, g.intro, t.name typename from recommend r, goods g, type t where type = 2 and r.goods_id = g.id and g.type_id = t.id;

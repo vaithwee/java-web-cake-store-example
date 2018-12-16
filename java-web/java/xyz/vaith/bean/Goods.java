@@ -9,7 +9,7 @@ public class Goods {
     private float price;
     private String intro;
     private int stock;
-    private int type_id;
+    private Type type;
 
     public int getId() {
         return id;
@@ -75,12 +75,12 @@ public class Goods {
         this.stock = stock;
     }
 
-    public int getType_id() {
-        return type_id;
+    public Type getType() {
+        return type;
     }
 
-    public void setType_id(int type_id) {
-        this.type_id = type_id;
+    public void setType(Type type) {
+        this.type = type;
     }
 
     @Override
@@ -94,7 +94,7 @@ public class Goods {
                 ", price=" + price +
                 ", intro='" + intro + '\'' +
                 ", stock=" + stock +
-                ", type_id=" + type_id +
+                ", type=" + type +
                 '}';
     }
 }
