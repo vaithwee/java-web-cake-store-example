@@ -21,4 +21,11 @@ public class GoodsServiceImpl implements GoodsService {
         GoodsDao dao = new GoodsDaoImpl();
         return dao.getGoodsList(RecommendType.New);
     }
+
+    @Override
+    public Map<String, Object> getBannerGoods() throws SQLException {
+        GoodsDao dao = new GoodsDaoImpl();
+        List<Map<String, Object>> goodsList = dao.getGoodsList(RecommendType.Banner);
+        return goodsList.get(0);
+    }
 }

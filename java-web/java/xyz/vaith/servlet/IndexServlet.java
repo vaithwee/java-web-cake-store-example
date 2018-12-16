@@ -23,9 +23,11 @@ public class IndexServlet extends HttpServlet {
         try {
             List<Map<String, Object>> hotList = service.getHotList();
             List<Map<String, Object>> newArrivalList = service.getNewArrivalList();
+            Map<String, Object> banner = service.getBannerGoods();
             req.setCharacterEncoding("utf-8");
             req.setAttribute("hotList", hotList);
             req.setAttribute("newList", newArrivalList);
+            req.setAttribute("banner", banner);
             System.out.println(hotList);
         } catch (SQLException e) {
             e.printStackTrace();

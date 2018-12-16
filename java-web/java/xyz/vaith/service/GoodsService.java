@@ -7,4 +7,5 @@ import java.util.Map;
 public interface GoodsService {
     public List<Map<String, Object>> getHotList() throws SQLException;
     public List<Map<String, Object>> getNewArrivalList() throws SQLException;
+    public Map<String, Object> getBannerGoods() throws SQLException;
 }
