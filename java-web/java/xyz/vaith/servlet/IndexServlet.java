@@ -28,7 +28,6 @@ public class IndexServlet extends HttpServlet {
             req.setAttribute("hotList", hotList);
             req.setAttribute("newList", newArrivalList);
             req.setAttribute("banner", banner);
-            System.out.println(hotList);
         } catch (SQLException e) {
             e.printStackTrace();
         }

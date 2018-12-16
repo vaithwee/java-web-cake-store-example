@@ -34,9 +34,9 @@
                                         <h4>商品分类</h4>
                                         <ul class="multi-column-dropdown">
 
-                                            <li><a class="list" href="goods.action?typeid=5">全部分类</a></li>
+                                            <li><a class="list" href="/goodsList">全部分类</a></li>
                                             <c:forEach var="type" items="${types}" >
-                                                <li><a class="list" href="goods.action?typeid=5">${type.name}</a></li>
+                                                <li><a class="list" href="/goodsList?typeid=${type.id}">${type.name}</a></li>
                                             </c:forEach>
 
                                         </ul>
