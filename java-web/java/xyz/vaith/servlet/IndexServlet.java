@@ -21,7 +21,7 @@ public class IndexServlet extends HttpServlet {
         try {
             List<Map<String, Object>> hotList = dao.getHotList();
             req.setCharacterEncoding("utf-8");
-            req.setAttribute("hostList", hotList);
+            req.setAttribute("hotList", hotList);
             System.out.println(hotList);
         } catch (SQLException e) {
             e.printStackTrace();

@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,144 +47,31 @@
     <div class="container">
         <div class="alert alert-danger">热销推荐</div>
         <div class="gallery-grids">
-
-            <div class="col-md-4 gallery-grid glry-two">
-                <a href="detail.action?goodid=6">
-                    <img src="../../picture/6-1.jpg" class="img-responsive" alt="夜礼服" width="350" height="350"/>
-                </a>
-                <div class="gallery-info galrr-info-two">
-                    <p>
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                        <a href="detail.action?goodid=6">查看详情</a>
-                    </p>
-                    <a class="shop" href="javascript:;" onclick="buy(6)">立刻购买</a>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="galy-info">
-                    <p>经典系列 > 夜礼服</p>
-                    <div class="galry">
-                        <div class="prices">
-                            <h5 class="item_price">¥ 299</h5>
+            <c:forEach items="${hotList}" var="goods">
+                <div class="col-md-4 gallery-grid glry-two">
+                    <a href="detail.action?goodid=6">
+                        <img src="${pageContext.request.contextPath}${goods.cover}" class="img-responsive" alt="${goods.name}" width="350" height="350"/>
+                    </a>
+                    <div class="gallery-info galrr-info-two">
+                        <p>
+                            <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                            <a href="detail.action?goodid=6">查看详情</a>
+                        </p>
+                        <a class="shop" href="javascript:;" onclick="buy(6)">立刻购买</a>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="galy-info">
+                        <p>${goods.typename} > ${goods.name}</p>
+                        <div class="galry">
+                            <div class="prices">
+                                <h5 class="item_price">¥ ${goods.price}</h5>
+                            </div>
+                            <div class="clearfix"></div>
                         </div>
-                        <div class="clearfix"></div>
                     </div>
                 </div>
-            </div>
+            </c:forEach>
 
-            <div class="col-md-4 gallery-grid glry-two">
-                <a href="detail.action?goodid=9">
-                    <img src="../../picture/9-1.jpg" class="img-responsive" alt="草莓冰淇淋" width="350" height="350"/>
-                </a>
-                <div class="gallery-info galrr-info-two">
-                    <p>
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                        <a href="detail.action?goodid=9">查看详情</a>
-                    </p>
-                    <a class="shop" href="javascript:;" onclick="buy(9)">立刻购买</a>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="galy-info">
-                    <p>冰淇淋系列 > 草莓冰淇淋</p>
-                    <div class="galry">
-                        <div class="prices">
-                            <h5 class="item_price">¥ 299</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 gallery-grid glry-two">
-                <a href="detail.action?goodid=3">
-                    <img src="../../picture/3-1.jpg" class="img-responsive" alt="留恋之恋" width="350" height="350"/>
-                </a>
-                <div class="gallery-info galrr-info-two">
-                    <p>
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                        <a href="detail.action?goodid=3">查看详情</a>
-                    </p>
-                    <a class="shop" href="javascript:;" onclick="buy(3)">立刻购买</a>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="galy-info">
-                    <p>经典系列 > 留恋之恋</p>
-                    <div class="galry">
-                        <div class="prices">
-                            <h5 class="item_price">¥ 229</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 gallery-grid glry-two">
-                <a href="detail.action?goodid=5">
-                    <img src="../../picture/5-1.jpg" class="img-responsive" alt="芒果列车" width="350" height="350"/>
-                </a>
-                <div class="gallery-info galrr-info-two">
-                    <p>
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                        <a href="detail.action?goodid=5">查看详情</a>
-                    </p>
-                    <a class="shop" href="javascript:;" onclick="buy(5)">立刻购买</a>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="galy-info">
-                    <p>经典系列 > 芒果列车</p>
-                    <div class="galry">
-                        <div class="prices">
-                            <h5 class="item_price">¥ 269</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 gallery-grid glry-two">
-                <a href="detail.action?goodid=2">
-                    <img src="../../picture/2-1.jpg" class="img-responsive" alt="浪漫甜心" width="350" height="350"/>
-                </a>
-                <div class="gallery-info galrr-info-two">
-                    <p>
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                        <a href="detail.action?goodid=2">查看详情</a>
-                    </p>
-                    <a class="shop" href="javascript:;" onclick="buy(2)">立刻购买</a>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="galy-info">
-                    <p>经典系列 > 浪漫甜心</p>
-                    <div class="galry">
-                        <div class="prices">
-                            <h5 class="item_price">¥ 229</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 gallery-grid glry-two">
-                <a href="detail.action?goodid=1">
-                    <img src="../../picture/1-1.jpg" class="img-responsive" alt="玫瑰花园" width="350" height="350"/>
-                </a>
-                <div class="gallery-info galrr-info-two">
-                    <p>
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
-                        <a href="detail.action?goodid=1">查看详情</a>
-                    </p>
-                    <a class="shop" href="javascript:;" onclick="buy(1)">立刻购买</a>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="galy-info">
-                    <p>经典系列 > 玫瑰花园</p>
-                    <div class="galry">
-                        <div class="prices">
-                            <h5 class="item_price">¥ 229</h5>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
