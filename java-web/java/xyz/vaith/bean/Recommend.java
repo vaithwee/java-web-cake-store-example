@@ -1,8 +1,11 @@
 package xyz.vaith.bean;
 
+
+
+
 public class Recommend {
     private int id;
-    private int type;
+    private RecommendType type;
     private Goods goods;
 
     public int getId() {
@@ -13,11 +16,11 @@ public class Recommend {
         this.id = id;
     }
 
-    public int getType() {
+    public RecommendType getType() {
         return type;
     }
 
-    public void setType(int type) {
+    public void setType(RecommendType type) {
         this.type = type;
     }
 

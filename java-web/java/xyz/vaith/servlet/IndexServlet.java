@@ -2,6 +2,8 @@ package xyz.vaith.servlet;
 
 import xyz.vaith.dao.GoodsDao;
 import xyz.vaith.dao.impl.GoodsDaoImpl;
+import xyz.vaith.service.GoodsService;
+import xyz.vaith.service.impl.GoodsServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,11 +19,13 @@ import java.util.Map;
 public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        GoodsDao dao = new GoodsDaoImpl();
+        GoodsService service = new GoodsServiceImpl();
         try {
-            List<Map<String, Object>> hotList = dao.getHotList();
+            List<Map<String, Object>> hotList = service.getHotList();
+            List<Map<String, Object>> newArrivalList = service.getNewArrivalList();
             req.setCharacterEncoding("utf-8");
             req.setAttribute("hotList", hotList);
+            req.setAttribute("newList", newArrivalList);
             System.out.println(hotList);
         } catch (SQLException e) {
             e.printStackTrace();
