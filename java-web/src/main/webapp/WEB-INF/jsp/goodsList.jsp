@@ -35,7 +35,10 @@
 <!--products-->
 <div class="products">
     <div class="container">
-        <h2>经典系列</h2>
+        <h2><c:choose>
+            <c:when test="${empty type}">全部分类</c:when>
+            <c:otherwise>${type.name}</c:otherwise>
+        </c:choose></h2>
 
         <div class="col-md-12 product-model-sec">
 
@@ -67,13 +70,13 @@
             <div class="clearfix"> </div>
         </div>
         <div><div style='text-align:center;'>
-            <a class='btn btn-info' <c:if test="${page.page==0}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${typeid}&page=0" >首页</a>
-            <a class='btn btn-info' <c:if test="${page.page==0}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${typeid}&page=${page.page-1}" >上一页</a>
+            <a class='btn btn-info' <c:if test="${page.page==0}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${type.id}&page=0" >首页</a>
+            <a class='btn btn-info' <c:if test="${page.page==0}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${type.id}&page=${page.page-1}" >上一页</a>
             <h2 style='display:inline;'>[${page.page+1}/${page.totalPage}]</h2>
             <h2 style='display:inline;'>[${page.totalCount}]</h2>
-            <a class='btn btn-info' <c:if test="${page.page==page.totalPage-1}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${typeid}&page=${page.page+1}" >下一页</a>
-            <a class='btn btn-info' <c:if test="${page.page==page.totalPage-1}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${typeid}&page=${page.totalPage-1}" >尾页</a>
-            <input type='text' class='form-control' style='display:inline;width:60px;' value=''/><a class='btn btn-info' href='javascript:void(0);' onclick='location.href="<c:url value="/goodsList" />?page="+(this.previousSibling.value-1)+"&typeid=${typeid}"'>GO</a>
+            <a class='btn btn-info' <c:if test="${page.page==page.totalPage-1}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${type.id}&page=${page.page+1}" >下一页</a>
+            <a class='btn btn-info' <c:if test="${page.page==page.totalPage-1}">disabled</c:if> href="<c:url value="/goodsList" />?typeid=${type.id}&page=${page.totalPage-1}" >尾页</a>
+            <input type='text' class='form-control' style='display:inline;width:60px;' value=''/><a class='btn btn-info' href='javascript:void(0);' onclick='location.href="<c:url value="/goodsList" />?page="+(this.previousSibling.value-1)+"&typeid=${type.id}"'>GO</a>
         </div>
         </div>
     </div>

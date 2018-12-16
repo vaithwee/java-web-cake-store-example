@@ -4,7 +4,9 @@ import xyz.vaith.bean.Goods;
 import xyz.vaith.bean.Page;
 import xyz.vaith.bean.Type;
 import xyz.vaith.service.GoodsService;
+import xyz.vaith.service.TypeService;
 import xyz.vaith.service.impl.GoodsServiceImpl;
+import xyz.vaith.service.impl.TypeServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -37,7 +39,16 @@ public class GoodsListServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        request.setAttribute("typeid", id);
+        Type type = null;
+        TypeService typeService = new TypeServiceImpl();
+        if (id != 0) {
+            try {
+                type = typeService.getType(id);
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+        request.setAttribute("type", type);
         request.getRequestDispatcher("/WEB-INF/jsp/goodsList.jsp").forward(request, response);
     }
 }

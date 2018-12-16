@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface TypeService {
     List<Type> getAllType() throws SQLException;
+    Type getType(int id) throws SQLException;
 }

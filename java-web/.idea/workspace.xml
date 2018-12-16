@@ -7,13 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d3707cd-bf10-4d27-999c-5eb245390238" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/servlet/IndexServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/servlet/IndexServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/goodslist.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/goodslist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -113,7 +112,7 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="3" />
-          <entry key="java" value="41" />
+          <entry key="java" value="45" />
           <entry key="jsp" value="11" />
           <entry key="recommend" value="2" />
           <entry key="sql" value="3" />
@@ -126,7 +125,7 @@
           <entry key="CSS" value="1" />
           <entry key="Database Element" value="2" />
           <entry key="HTML" value="3" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="45" />
           <entry key="JSP" value="11" />
           <entry key="Scratch" value="3" />
           <entry key="XHTML" value="1" />
@@ -135,8 +134,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3019" />
-          <entry key="jsp" value="673" />
+          <entry key="java" value="3252" />
+          <entry key="jsp" value="728" />
           <entry key="sql" value="175" />
           <entry key="txt" value="4" />
           <entry key="xml" value="29" />
@@ -144,8 +143,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3019" />
-          <entry key="JSP" value="673" />
+          <entry key="JAVA" value="3252" />
+          <entry key="JSP" value="728" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scratch" value="175" />
           <entry key="XML" value="29" />
@@ -156,22 +155,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="12" column="52" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="693">
+              <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -180,10 +167,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java">
+        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="306">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -216,10 +203,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="680">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
-              <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+            <state relative-caret-position="652">
+              <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -227,8 +226,39 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="75" column="237" selection-start-line="75" selection-start-column="237" selection-end-line="75" selection-end-column="237" />
+            <state relative-caret-position="566">
+              <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/bean/Type.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding>
+                <element signature="e#114#115#0" expanded="true" />
+                <element signature="e#139#140#0" expanded="true" />
+                <element signature="e#172#173#0" expanded="true" />
+                <element signature="e#200#201#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#330#331#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -264,18 +294,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-              <folding>
-                <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -291,7 +309,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>fo</find>
+      <find>typeid</find>
     </findStrings>
+    <replaceStrings>
+      <replace>type.id</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -317,10 +339,6 @@
         <option value="$PROJECT_DIR$/java/xyz/vaith/bean/RecommendType.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java" />
-        <option value="$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java" />
-        <option value="$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java" />
-        <option value="$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/listener/ApplicationListener.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/goodslist.html" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/servlet/IndexServlet.java" />
@@ -329,8 +347,12 @@
         <option value="$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java" />
-        <option value="$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java" />
+        <option value="$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java" />
+        <option value="$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java" />
+        <option value="$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" />
       </list>
     </option>
@@ -713,7 +735,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544970751613" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544972417937" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -883,7 +905,7 @@
       <option name="presentableId" value="Default" />
       <updated>1544882997995</updated>
       <workItem from="1544883001739" duration="3835000" />
-      <workItem from="1544921916537" duration="15019000" />
+      <workItem from="1544921916537" duration="16002000" />
     </task>
     <servers />
   </component>
@@ -920,7 +942,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18854000" />
+    <option name="totallyTimeSpent" value="19837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1338" extended-state="0" />
@@ -1098,23 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/bean/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#114#115#0" expanded="true" />
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#172#173#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="das://dcaae6e0-89bc-4719-a759-85843dfce53f/schema/cake/table/recommend">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1168,26 +1173,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/xyz/vaith/listener/ApplicationListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -1229,32 +1214,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1315,10 +1280,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java">
+    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/TypeDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="306">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/impl/TypeDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="25" column="72" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1335,17 +1310,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
-          <caret line="34" column="43" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
+        <state relative-caret-position="652">
+          <caret line="50" column="43" selection-start-line="50" selection-start-column="43" selection-end-line="50" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/xyz/vaith/bean/Type.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#114#115#0" expanded="true" />
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="75" column="237" selection-start-line="75" selection-start-column="237" selection-end-line="75" selection-end-column="237" />
+        <state relative-caret-position="566">
+          <caret line="40" column="24" lean-forward="true" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
         </state>
       </provider>
     </entry>

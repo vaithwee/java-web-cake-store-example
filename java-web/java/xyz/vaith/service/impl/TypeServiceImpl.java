@@ -14,4 +14,10 @@ public class TypeServiceImpl implements TypeService {
         TypeDao dao = new TypeDaoImpl();
         return dao.getAllType();
     }
+
+    @Override
+    public Type getType(int id) throws SQLException {
+        TypeDao dao = new TypeDaoImpl();
+        return dao.getType(id);
+    }
 }
