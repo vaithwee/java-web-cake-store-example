@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!--header-->
 <div class="header">
@@ -33,15 +34,10 @@
                                         <h4>商品分类</h4>
                                         <ul class="multi-column-dropdown">
 
-                                            <li><a class="list" href="goods.action?typeid=5">经典系列</a></li>
-
-                                            <li><a class="list" href="goods.action?typeid=4">法式系列</a></li>
-
-                                            <li><a class="list" href="goods.action?typeid=3">儿童系列</a></li>
-
-                                            <li><a class="list" href="goods.action?typeid=2">零食系列</a></li>
-
-                                            <li><a class="list" href="goods.action?typeid=1">冰淇淋系列</a></li>
+                                            <li><a class="list" href="goods.action?typeid=5">全部分类</a></li>
+                                            <c:forEach var="type" items="${types}" >
+                                                <li><a class="list" href="goods.action?typeid=5">${type.name}</a></li>
+                                            </c:forEach>
 
                                         </ul>
                                     </div>

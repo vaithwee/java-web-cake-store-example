@@ -6,4 +6,8 @@
   <welcome-file-list>
     <welcome-file>index</welcome-file>
   </welcome-file-list>
+  
+  <listener>
+    <listener-class>xyz.vaith.listener.ApplicationListener</listener-class>
+  </listener>
 </web-app>
