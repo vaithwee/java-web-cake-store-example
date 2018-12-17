@@ -45,8 +45,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="top.action?typeid=2" >热销</a></li>
-                    <li><a href="top.action?typeid=3" >新品</a></li>
+                    <li><a href="<c:url value="/recommendGoodsList" />?typeid=2" >热销</a></li>
+                    <li><a href="<c:url value="/recommendGoodsList" />?typeid=3" >新品</a></li>
 
                     <li><a href="register.action?flag=-1" >注册</a></li>
                     <li><a href="login.action?flag=-1" >登录</a></li>

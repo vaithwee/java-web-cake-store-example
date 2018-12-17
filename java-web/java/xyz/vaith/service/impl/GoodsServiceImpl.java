@@ -43,4 +43,17 @@ public class GoodsServiceImpl implements GoodsService {
         p.setTotalCountAndSize(count, 8);
         return p;
     }
+
+    @Override
+    public Page getRecommendGoodsList(int page, RecommendType recommendType) throws SQLException {
+        Page p = new Page();
+        GoodsDao dao = new GoodsDaoImpl();
+        List list = dao.getRecommendGoodsList(page, 4, recommendType.getValue());
+        p.setList(list);
+        p.setPage(page);
+        int count = dao.getRecommendGoodsCount(recommendType.getValue());
+        p.setTotalCount(count);
+        p.setTotalCountAndSize(count, 4);
+        return p;
+    }
 }

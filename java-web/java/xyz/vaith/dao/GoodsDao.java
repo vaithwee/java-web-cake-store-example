@@ -11,4 +11,6 @@ public interface GoodsDao {
     List<Map<String, Object>> getGoodsList(RecommendType recommendType) throws SQLException;
     List<Goods> getGoodsList(int page, int size, int type) throws SQLException;
     int getGoodsCount(int type) throws SQLException;
+    List<Goods> getRecommendGoodsList(int page, int size, int recommendType) throws SQLException;
+    int getRecommendGoodsCount(int type) throws SQLException;
 }

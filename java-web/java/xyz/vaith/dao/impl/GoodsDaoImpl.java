@@ -45,4 +45,18 @@ public class GoodsDaoImpl implements GoodsDao {
             return runner.query(sql, new ScalarHandler<Long>(), type).intValue();
         }
     }
+
+    @Override
+    public List<Goods> getRecommendGoodsList(int page, int size, int recommendType) throws SQLException {
+        String sql = "select g.id, g.name, g.cover, g.image1, g.image2, g.intro, g.price, g.stock from goods g, recommend r where g.id = r.goods_id and r.type = ? limit ?,?";
+        QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
+        return runner.query(sql, new BeanListHandler<Goods>(Goods.class), recommendType, page * size, size);
+    }
+
+    @Override
+    public int getRecommendGoodsCount(int type) throws SQLException {
+        String sql = "select count(*) from goods g, recommend r where g.id = r.goods_id and r.type = ?";
+        QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
+        return runner.query(sql, new ScalarHandler<Long>(), type).intValue();
+    }
 }
