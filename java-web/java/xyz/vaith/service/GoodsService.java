@@ -14,4 +14,5 @@ public interface GoodsService {
     Map<String, Object> getBannerGoods() throws SQLException;
     Page getGoodsPage(int page, int type) throws SQLException;
     Page getRecommendGoodsList(int page, RecommendType recommendType) throws SQLException;
+    Goods getGoodsById(int id) throws SQLException;
 }

@@ -56,4 +56,10 @@ public class GoodsServiceImpl implements GoodsService {
         p.setTotalCountAndSize(count, 4);
         return p;
     }
+
+    @Override
+    public Goods getGoodsById(int id) throws SQLException {
+        GoodsDao dao = new GoodsDaoImpl();
+        return dao.getGoodsById(id);
+    }
 }

@@ -13,4 +13,5 @@ public interface GoodsDao {
     int getGoodsCount(int type) throws SQLException;
     List<Goods> getRecommendGoodsList(int page, int size, int recommendType) throws SQLException;
     int getRecommendGoodsCount(int type) throws SQLException;
+    Goods getGoodsById(int id) throws SQLException;
 }

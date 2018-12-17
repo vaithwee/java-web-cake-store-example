@@ -1,6 +1,7 @@
 package xyz.vaith.dao.impl;
 
 import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
@@ -58,5 +59,12 @@ public class GoodsDaoImpl implements GoodsDao {
         String sql = "select count(*) from goods g, recommend r where g.id = r.goods_id and r.type = ?";
         QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
         return runner.query(sql, new ScalarHandler<Long>(), type).intValue();
+    }
+
+    @Override
+    public Goods getGoodsById(int id) throws SQLException {
+        String sql = "select g.id, g.name, g.cover, g.image1, g.image2, g.intro, g.price, g.stock, t.id typeId, t.name typeName from goods g, type t where g.id = ? and g.type_id = t.id";
+        QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
+        return runner.query(sql, new BeanHandler<Goods>(Goods.class), id);
     }
 }

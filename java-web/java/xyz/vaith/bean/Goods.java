@@ -83,6 +83,20 @@ public class Goods {
         this.type = type;
     }
 
+    public void setTypeId(int typeId) {
+        if (type==null) {
+            type = new Type();
+        }
+        type.setId(typeId);
+    }
+
+    public void setTypeName(String typeName) {
+        if (type==null) {
+            type = new Type();
+        }
+        type.setName(typeName);
+    }
+
     @Override
     public String toString() {
         return "Goods{" +
