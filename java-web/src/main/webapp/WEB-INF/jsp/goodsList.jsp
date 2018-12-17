@@ -28,7 +28,9 @@
 
 
 
-<%@ include file="header.jsp" %>
+<jsp:include page="header.jsp">
+    <jsp:param name="flag" value="2" />
+</jsp:include>
 
 
 

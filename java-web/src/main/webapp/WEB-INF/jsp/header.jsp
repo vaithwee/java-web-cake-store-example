@@ -19,14 +19,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1 class="navbar-brand"><a href="index.action">蛋糕店</a></h1>
+                <h1 class="navbar-brand"><a href="<c:url value="/index" />">蛋糕店</a></h1>
             </div>
             <!--navbar-header-->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.action" class="active">首页</a></li>
+
+                    <li><a href="<c:url value="/index" />"<c:if test="${param.flag==1}" >class="active"</c:if> >首页</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle " data-toggle="dropdown">商品分类<b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle <c:if test="${param.flag==2}" >active</c:if>" data-toggle="dropdown">商品分类<b class="caret"></b></a>
                         <ul class="dropdown-menu multi-column columns-2">
                             <li>
                                 <div class="row">
@@ -45,8 +46,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="<c:url value="/recommendGoodsList" />?typeid=2" >热销</a></li>
-                    <li><a href="<c:url value="/recommendGoodsList" />?typeid=3" >新品</a></li>
+                    <li><a href="<c:url value="/recommendGoodsList" />?typeid=2" <c:if test="${param.flag==3 && typeid==2}" >class="active"</c:if> >热销</a></li>
+                    <li><a href="<c:url value="/recommendGoodsList" />?typeid=3" <c:if test="${param.flag==3 && typeid==3}" >class="active"</c:if> >新品</a></li>
 
                     <li><a href="register.action?flag=-1" >注册</a></li>
                     <li><a href="login.action?flag=-1" >登录</a></li>

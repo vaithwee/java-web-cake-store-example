@@ -24,13 +24,9 @@
 </head>
 <body>
 
-
-
-
-
-<%@ include file="header.jsp" %>
-
-
+<jsp:include page="header.jsp">
+    <jsp:param name="flag" value="3" />
+</jsp:include>
 
 <!--products-->
 <div class="products">

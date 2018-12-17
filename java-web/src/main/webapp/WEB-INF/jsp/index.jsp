@@ -22,7 +22,10 @@
 </head>
 <body>
 
-<%@ include file="header.jsp" %>
+
+<jsp:include page="header.jsp">
+    <jsp:param name="flag" value="1" />
+</jsp:include>
 <!--banner-->
 
 <div class="banner">

@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d3707cd-bf10-4d27-999c-5eb245390238" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -95,7 +93,7 @@
           <entry key="css" value="1" />
           <entry key="html" value="3" />
           <entry key="java" value="57" />
-          <entry key="jsp" value="14" />
+          <entry key="jsp" value="16" />
           <entry key="recommend" value="2" />
           <entry key="sql" value="4" />
           <entry key="xhtml" value="1" />
@@ -108,7 +106,7 @@
           <entry key="Database Element" value="2" />
           <entry key="HTML" value="3" />
           <entry key="JAVA" value="57" />
-          <entry key="JSP" value="14" />
+          <entry key="JSP" value="16" />
           <entry key="Scratch" value="4" />
           <entry key="XHTML" value="1" />
           <entry key="XML" value="7" />
@@ -117,7 +115,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="4089" />
-          <entry key="jsp" value="745" />
+          <entry key="jsp" value="870" />
           <entry key="sql" value="255" />
           <entry key="txt" value="4" />
           <entry key="xml" value="29" />
@@ -126,7 +124,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="4089" />
-          <entry key="JSP" value="745" />
+          <entry key="JSP" value="870" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scratch" value="255" />
           <entry key="XML" value="29" />
@@ -148,10 +146,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="694">
+            <state relative-caret-position="693">
               <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -184,11 +182,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="47" column="70" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="70" />
+            <state relative-caret-position="557">
+              <caret line="49" column="120" selection-start-line="49" selection-start-column="120" selection-end-line="49" selection-end-column="120" />
             </state>
           </provider>
         </entry>
@@ -201,6 +199,27 @@
               <folding>
                 <element signature="e#113#114#0" expanded="true" />
                 <element signature="e#147#148#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding>
+                <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -221,29 +240,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1048">
-              <caret line="52" column="108" lean-forward="true" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="108" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/dcaae6e0-89bc-4719-a759-85843dfce53f/console_2.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="80" />
+            <state relative-caret-position="542">
+              <caret line="68" column="140" selection-start-line="68" selection-start-column="134" selection-end-line="68" selection-end-column="140" />
             </state>
           </provider>
         </entry>
@@ -290,7 +288,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dcaae6e0-89bc-4719-a759-85843dfce53f/console_1.sql" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/bean/enum/RecommendType.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/bean/Recommend.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/listener/ApplicationListener.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/goodslist.html" />
@@ -301,16 +298,17 @@
         <option value="$PROJECT_DIR$/java/xyz/vaith/service/TypeService.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/service/impl/TypeServiceImpl.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/servlet/GoodsListServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/dao/GoodsDao.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/dcaae6e0-89bc-4719-a759-85843dfce53f/console_2.sql" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/dao/impl/GoodsDaoImpl.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/bean/RecommendType.java" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/servlet/RecommendGoodsListServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp" />
         <option value="$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp" />
       </list>
     </option>
   </component>
@@ -685,7 +683,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545055176359" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545056656484" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -857,7 +855,7 @@
       <updated>1544882997995</updated>
       <workItem from="1544883001739" duration="3835000" />
       <workItem from="1544921916537" duration="16635000" />
-      <workItem from="1545052511865" duration="2208000" />
+      <workItem from="1545052511865" duration="3201000" />
     </task>
     <servers />
   </component>
@@ -894,7 +892,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22678000" />
+    <option name="totallyTimeSpent" value="23671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2560" height="1338" extended-state="0" />
@@ -1122,16 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
-          <folding>
-            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/xyz/vaith/bean/Type.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1171,13 +1159,6 @@
             <element signature="e#853#854#0" expanded="true" />
             <element signature="e#897#898#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -1283,20 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="47" column="70" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="65" column="22" lean-forward="true" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/xyz/vaith/servlet/RecommendGoodsListServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1309,11 +1276,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/java/xyz/vaith/service/impl/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="694">
+        <state relative-caret-position="693">
           <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="n#c:forEach#0;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/recommendGoodsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="68" column="140" selection-start-line="68" selection-start-column="134" selection-end-line="68" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="49" column="120" selection-start-line="49" selection-start-column="120" selection-end-line="49" selection-end-column="120" />
         </state>
       </provider>
     </entry>
