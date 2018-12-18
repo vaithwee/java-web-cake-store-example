@@ -49,7 +49,7 @@
                     <li><a href="<c:url value="/recommendGoodsList" />?typeid=2" <c:if test="${param.flag==3 && typeid==2}" >class="active"</c:if> >热销</a></li>
                     <li><a href="<c:url value="/recommendGoodsList" />?typeid=3" <c:if test="${param.flag==3 && typeid==3}" >class="active"</c:if> >新品</a></li>
 
-                    <li><a href="register.action?flag=-1" >注册</a></li>
+                    <li><a href="<c:url value="/user/register" />" >注册</a></li>
                     <li><a href="login.action?flag=-1" >登录</a></li>
 
 

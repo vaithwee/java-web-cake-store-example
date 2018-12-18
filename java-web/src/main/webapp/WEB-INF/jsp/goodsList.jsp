@@ -46,7 +46,7 @@
 
             <c:forEach items="${page.list}" var="goods">
                 <div class="product-grid">
-                    <a href="detail.action?goodid=${goods.id}">
+                    <a href="<c:url value="/goodsDetail" />?id=${goods.id}">
                         <div class="more-product"><span> </span></div>
                         <div class="product-img b-link-stripe b-animate-go  thickbox">
                             <img src="<c:url value="${goods.cover}" />" class="img-responsive" alt="${goods.name}" width="240" height="240">
