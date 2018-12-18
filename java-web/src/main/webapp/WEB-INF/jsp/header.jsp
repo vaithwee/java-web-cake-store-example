@@ -50,7 +50,7 @@
                     <li><a href="<c:url value="/recommendGoodsList" />?typeid=3" <c:if test="${param.flag==3 && typeid==3}" >class="active"</c:if> >新品</a></li>
 
                     <li><a href="<c:url value="/user/register" />" >注册</a></li>
-                    <li><a href="login.action?flag=-1" >登录</a></li>
+                    <li><a href="<c:url value="/user/login" />" >登录</a></li>
 
 
                     <li><a href="../admin.jsp" target="_blank">后台管理</a></li>
