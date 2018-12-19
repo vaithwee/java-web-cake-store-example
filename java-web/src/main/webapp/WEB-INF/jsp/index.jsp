@@ -13,12 +13,7 @@
     <title>商品列表</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link type="text/css" rel="stylesheet" href="../../css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="../../css/style.css">
-    <script type="text/javascript" src="../../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../../layer/layer.js"></script>
-    <script type="text/javascript" src="../../js/cart.js"></script>
+    <%@ include file="javascript.jsp" %>
 </head>
 <body>
 
@@ -32,7 +27,7 @@
     <div class="container">
         <h2 class="hdng"><a href="<c:url value="/goodsDetail" />?id=${banner.id}">${banner.name}</a><span></span></h2>
         <p>今日精选推荐</p>
-        <a class="banner_a" href="javascript:;" onclick="buy(7)">立刻购买</a>
+        <a class="banner_a" href="javascript:;" onclick="buy(${banner.id})">立刻购买</a>
         <div class="banner-text">
             <a href="<c:url value="/goodsDetail" />?id=${banner.id}">
                 <img src="${pageContext.request.contextPath}${banner.cover}" alt="${banner.name}" width="350" height="350">
@@ -60,7 +55,7 @@
                             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             <a href="<c:url value="/goodsDetail" />?id=${goods.id}">查看详情</a>
                         </p>
-                        <a class="shop" href="javascript:;" onclick="buy(6)">立刻购买</a>
+                        <a class="shop" href="javascript:;" onclick="buy(${goods.id})">立刻购买</a>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="galy-info">
@@ -91,7 +86,7 @@
                             <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                             <a href="<c:url value="/goodsDetail" />?id=${goods.id}">查看详情</a>
                         </p>
-                        <a class="shop" href="javascript:;" onclick="buy(14)">立刻购买</a>
+                        <a class="shop" href="javascript:;" onclick="buy(${goods.id})">立刻购买</a>
                         <div class="clearfix"> </div>
                     </div>
                     <div class="galy-info">

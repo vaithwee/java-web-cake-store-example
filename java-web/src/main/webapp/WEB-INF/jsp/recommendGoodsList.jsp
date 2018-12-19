@@ -14,13 +14,7 @@
     <title>首页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/simpleCart.min.js"></script>
-    <script type="text/javascript" src="layer/layer.js"></script>
-    <script type="text/javascript" src="js/cart.js"></script>
+    <%@ include file="javascript.jsp" %>
 </head>
 <body>
 
@@ -55,7 +49,7 @@
                         <div class="product-info-cust prt_name">
                             <h4>${goods.name}</h4>
                             <span class="item_price">¥ ${goods.price}</span>
-                            <input type="button" class="item_add items" value="加入购物车" onclick="buy(6)">
+                            <input type="button" class="item_add items" value="加入购物车" onclick="buy(${goods.id})">
                             <div class="clearfix"> </div>
                         </div>
                     </div>

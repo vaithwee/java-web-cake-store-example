@@ -13,14 +13,7 @@
     <title>商品详情</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link type="text/css" rel="stylesheet" href="css/bootstrap.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
-    <link type="text/css" rel="stylesheet" href="css/flexslider.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="layer/layer.js"></script>
-    <script type="text/javascript" src="js/cart.js"></script>
+    <%@ include file="javascript.jsp" %>
     <script>
         $(function() {
             $('.flexslider').flexslider({
@@ -68,7 +61,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="btn_form">
-                    <a href="javascript:;" class="add-cart item_add" onclick="buy(6)">加入购物车</a>
+                    <a href="javascript:;" class="add-cart item_add" onclick="buy(${goods.id})">加入购物车</a>
                 </div>
             </div>
             <div class="col-md-4 single-grid1">
