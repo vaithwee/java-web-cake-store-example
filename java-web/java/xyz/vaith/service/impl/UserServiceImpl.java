@@ -25,4 +25,16 @@ public class UserServiceImpl implements UserService {
         UserDao dao = new UserDaoImpl();
         return dao.getUser(username, password);
     }
+
+    @Override
+    public void updateAddress(User user) throws SQLException {
+        UserDao dao = new UserDaoImpl();
+        dao.updateAddress(user);
+    }
+
+    @Override
+    public void updatePassword(User user) throws SQLException {
+        UserDao dao = new UserDaoImpl();
+        dao.updatePassword(user);
+    }
 }

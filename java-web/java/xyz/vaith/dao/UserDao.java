@@ -9,4 +9,6 @@ public interface UserDao {
     boolean isExistUsername(String username) throws SQLException;
     boolean isExistEmail(String username) throws SQLException;
     User getUser(String username, String password) throws SQLException;
+    void updateAddress(User user) throws SQLException;
+    void updatePassword(User user) throws SQLException;
 }

@@ -49,11 +49,20 @@
                     <li><a href="<c:url value="/recommendGoodsList" />?typeid=2" <c:if test="${param.flag==3 && typeid==2}" >class="active"</c:if> >热销</a></li>
                     <li><a href="<c:url value="/recommendGoodsList" />?typeid=3" <c:if test="${param.flag==3 && typeid==3}" >class="active"</c:if> >新品</a></li>
 
-                    <li><a href="<c:url value="/user/register" />" >注册</a></li>
-                    <li><a href="<c:url value="/user/login" />" >登录</a></li>
+                    <c:if test="${empty user}" >
+                        <li><a href="<c:url value="/user/register" />" >注册</a></li>
+                        <li><a href="<c:url value="/user/login" />" >登录</a></li>
+                    </c:if>
+                    <c:if test="${not empty user}">
+                        <li><a href="<c:url value="/user/center" />" >用户中心</a></li>
+                        <li><a href="<c:url value="/user/logout" />" >退出</a></li>
+                    </c:if>
 
 
-                    <li><a href="../admin.jsp" target="_blank">后台管理</a></li>
+                    <c:if test="${not empty user && user.isadmin}" >
+                        <li><a href="../admin.jsp" target="_blank">后台管理</a></li>
+                    </c:if>
+
                 </ul>
                 <!--/.navbar-collapse-->
             </div>

@@ -7,6 +7,7 @@ import xyz.vaith.bean.User;
 import xyz.vaith.dao.UserDao;
 import xyz.vaith.util.DBUtil;
 
+import java.rmi.Naming;
 import java.sql.SQLException;
 
 public class UserDaoImpl implements UserDao {
@@ -37,5 +38,19 @@ public class UserDaoImpl implements UserDao {
         String sql = "select * from user where username = ? and password = ?";
         QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
         return runner.query(sql, new BeanHandler<User>(User.class), username, password);
+    }
+
+    @Override
+    public void updateAddress(User user) throws SQLException {
+        String sql = "update user set name = ?, address = ?, phone = ? where id = ?";
+        QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
+        runner.update(sql, user.getName(), user.getAddress(), user.getPhone(), user.getId());
+    }
+
+    @Override
+    public void updatePassword(User user) throws SQLException {
+        String sql = "update user set password = ? where id = ?";
+        QueryRunner runner = new QueryRunner(DBUtil.getDataSource());
+        runner.update(sql, user.getPassword(), user.getId());
     }
 }
