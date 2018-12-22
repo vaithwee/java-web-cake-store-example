@@ -10,5 +10,7 @@
 <link type="text/css" rel="stylesheet" href="<c:url value="/css/bootstrap.css" /> ">
 <link type="text/css" rel="stylesheet" href="<c:url value="/css/style.css" />" />
 <script type="text/javascript" src="<c:url value="/js/jquery.min.js"/> "></script>
+<script type="text/javascript" src="<c:url value="/js/jquery.flexslider.js" />"></script>
+<script type="text/javascript" src="<c:url value="/js/layer.js" />"></script>
 <script type="text/javascript" src="<c:url value="/js/bootstrap.min.js" />"></script>
 <script type="text/javascript" src="<c:url value="/js/cart.js" />"></script>

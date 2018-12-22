@@ -80,8 +80,8 @@
             </div>
 
             <div class="header-right cart">
-                <a href="cart.action">
-                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><span class="card_num">0</span></span>
+                <a href="<c:url value="/shoppingCar" />">
+                    <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"><span class="card_num">${shoppingCar.amount}</span></span>
                 </a>
             </div>
             <div class="header-right login">

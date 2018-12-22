@@ -13,8 +13,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "ShoppingCarAddServlet", urlPatterns = {"/shoppingCar/add"})
-public class ShoppingCarAddServlet extends HttpServlet {
+@WebServlet(name = "ShoppingCarReduceServlet", urlPatterns = {"/shoppingCar/reduce"})
+public class ShoppingCarReduceServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int goodsId = 0;
@@ -24,26 +24,14 @@ public class ShoppingCarAddServlet extends HttpServlet {
         } catch (NumberFormatException e) {
             e.printStackTrace();
         }
-        GoodsService service = new GoodsServiceImpl();
-        Goods goods = null;
-        try {
-            goods = service.getGoodsById(goodsId);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
 
-        if (goods.getId() > 0 && goods.getStock() > 0) {
             ShoppingCar shoppingCar = (ShoppingCar) req.getSession().getAttribute("shoppingCar");
             if (shoppingCar == null) {
                 shoppingCar = new ShoppingCar();
             }
-            shoppingCar.addGoods(goods);
+            shoppingCar.reduceGooods(goodsId);
             req.getSession().setAttribute("shoppingCar", shoppingCar);
             resp.getWriter().print("ok");
-        } else {
-            resp.getWriter().print("fail");
-        }
-
 
     }
 }
